@@ -10,8 +10,13 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Row Data TBD</td>
+        <tr {props.sat.map((data, id) =>{
+
+        })} key = {id}>
+          <td>{data.name}</td>
+          <td>{data.type}</td>
+          <td>{data.launchDate}</td>
+          <td>{data.operational}</td>
         </tr>
         </tbody>
       </table>
